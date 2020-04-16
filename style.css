@@ -1,0 +1,53 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+p {
+    font-weight: 200;
+    letter-spacing: -0.5px;
+    word-spacing: -0.8px;
+    line-height: 30px;
+}
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+nav .navbar-nav li a {
+    color: #2E2F82 !important;
+    font-weight: 300;
+    letter-spacing: -0.8px;
+}
+nav .navbar-nav li a:hover {
+    color: #10934B !important;
+    font-weight: 300;
+}
+nav .navbar-nav li .quote {
+    padding: 4px;
+    background-color: #10934B;
+    border-radius: 5px;
+    color: white !important;
+}
+nav .navbar-nav li .quote:hover {
+    background-color: rgb(35, 185, 103);
+    color: white !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.hider::-webkit-scrollbar {
+    display: none;
+}
+.hider {
+    -ms-overflow-style: none;
+}
+.spacer {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

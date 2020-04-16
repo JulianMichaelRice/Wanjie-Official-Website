@@ -7,12 +7,97 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/fav.png">
+    <script>
+      function displayNextImage() {
+          x = (x === images.length - 1) ? 0 : x + 1;
+          document.getElementById("banner").src = images[x];
+      }
 
-    <title>WanJie</title>
+      function displayPreviousImage() {
+          x = (x <= 0) ? images.length - 1 : x - 1;
+          document.getElementById("banner").src = images[x];
+      }
+
+      function startTimer() {
+          setInterval(displayNextImage, 3000);
+      }
+
+      var images = [], x = -1;
+      images[0] = "img/banner_pic1.jpg";
+      images[1] = "img/banner_pic2.jpg";
+      images[2] = "img/banner_pic3.jpg";
+    </script>
+    <title>Wanjie Technology | Official Website</title>
   </head>
-  <body>
-    <h1>WanJie</h1>
+  <body onload="startTimer()" class="hider">
+    <nav class="navbar navbar-expand-sm navbar-light bg-none">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <a href="#"><img src="img/wanjielogo.png" height="50px"></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link quote" href="#">Get a Quote!</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="spacer"></div>
+    <div>
+        <img id="banner" src="img/banner_pic1.jpg" width="100%">
+    </div>
+    <div class="spacer"></div>
+    <div class="container" >
+      <h2>Company Introduction</h2>
+      <p>Hebei Wanjie Machinery Technology Co., Ltd. founded in 1999, is located in northern China printing machinery production
+        base – Yutian, Hebei. It is one of the earliest enterprises specializing in developing label printing machines. 
+        The company has passed ISO9001 international quality management system certification and CE certification of EU,
+        became the “High-tech enterprises in Hebei Province”, “Innovative Enterprises”, “Medium-small-sized enterprise of science and
+        technology ”, won the title of “Municipal Award for Science and Technology Progress”, won the title of “Hebei Province Small
+        and Medium-sized Enterprise Famous Brand Product”; wanjie technology center has been recognized as Provincial Enterprise
+        Technology Center, wanjie also has seven Invention Patents, twenty Utility Model Patents, won the support of National Science
+        and Technology Innovation Fund for Small and Medium Enterprises. We are responsible for the revision of five industry
+        standards, such as “Adhesive Label Printing Machine Industry Standard”, “Roll to Roll Flat-bed Lightweight Die-cut machine
+        Industry Standard”, “Printing Machine Terminology Industry Standard”, “ Printing machinery narrow-web rotary die-cutting
+        machine industry standard”.
+        <br>
+        Superior quality and customer trust are our fundamental momentum to our success and development. We will make great
+        efforts to develop, and advance together with our business partners all over the world.
+        <br>
+        Since our inception, we always adhere to the sustainable development strategy: "technology" as the guide, "market" as the base and “quality”
+        as our survival platform. Now we have developed into a high-tech enterprise with strong strength of research and development.
+        Our products are sold nationwide, as well as more than 30 countries and regions. Such as German, England, Italy, Spain,
+        Portugal, America, Vietnam, Thailand, Russia, Iran, Malaysia, Indonesia, Turkey, Brazil, South Korea, Serbia, Australia, Netherlands,
+        UAE, India, Ukraine, and Taiwan.</p>
+    </div>
 
+    <h1>Wanjie Machinery Technology Co., Ltd.</h1>
+
+
+
+
+    <footer>
+      --
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
