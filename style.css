@@ -37,8 +37,19 @@ nav .navbar-nav li .quote:hover {
     background-color: rgb(35, 185, 103);
     color: white !important;
 }
+footer { 
+    background: linear-gradient(0deg,#2E2F82, #10934B);
+    color: white;
+    padding: 25px;
+}
 html {
     scroll-behavior: smooth;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
 }
 
 .hider::-webkit-scrollbar {
@@ -50,4 +61,13 @@ html {
 .spacer {
     margin-top: 40px;
     margin-bottom: 40px;
+}
+.spacer-s {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.jumbotron {
+    font-weight: 300;
+    color: white;
+    background: linear-gradient(90deg,#2E2F82, #10934B)
 }
