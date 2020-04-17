@@ -119,3 +119,9 @@ form {
 .fader-gradient {
     background: linear-gradient(180deg, #FFFFFF, #10934B);
 }
+h6 {
+    font-weight: 300;
+}
+h5 {
+    font-weight: 400;
+}
