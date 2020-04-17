@@ -1,5 +1,28 @@
 <!doctype html>
 <html lang="en">
+  <!-- <?php
+    $lc = '';
+    if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])){
+    $lg = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+    $lc = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+    }
+    $arr = array('zh-HK','zh-TW','zh-MO','zh-SG');
+    if(($lc == 'zh') && (!in_array('lg',$arr))){
+    header('location: <?php
+    $lc = '';
+    if(isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])){
+    $lg = $_SERVER['HTTP_ACCEPT_LANGUAGE'];
+    $lc = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+    }
+    $arr = array('zh-HK','zh-TW','zh-MO','zh-SG');
+    if(($lc == 'zh') && (!in_array('lg',$arr))){
+    header('location: https://www.namesilo.com'); 
+    exit();
+    }
+    ?>'); 
+    exit();
+    }
+  ?> -->
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -65,7 +88,7 @@
     <div>
         <img id="banner" src="img/banner_pic1.jpg" width="100%">
     </div>
-
+    <div class="spacer"></div>
     <div class="container">
       <h3 class="text-center">Our Services</h3>
       <h5 class="text-center">Label Printing Machines</h5>
@@ -108,7 +131,7 @@
           <a href="#"><img src="img/fav.png" width="100%"></a>
         </div>
         <div class="col">
-          <a href="#"><img src="img/fav.png" width="100%"></a>
+          <a href="#" class="">Find out more!</a>
         </div>
       </div>
     </div>
@@ -136,7 +159,103 @@
       </div>
     </div>
 
-    <div class="container" >
+    <div class="spacer"></div>
+      <div class="container">
+        <h3 class="text-center">Recent News</h3>
+        <div class="row">
+          <div class="col-md-9">
+            <h6 class="">Articles</h6>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="article">
+                  <img src="img/fav.png" class="center article-img" width="80%">
+                  <p>Wanjie wins an award for their XYZ label machine printing capabilities</p>
+                </div>
+                <div class="spacer-s"></div>
+                <div class="text-center">
+                  <a href="#" class="button-link" style="text-align: center;">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="article">
+                  <img src="img/fav.png" class="center article-img" width="80%">
+                  <p>Wanjie wins an award for their XYZ label machine printing capabilities</p>
+                </div>
+                <div class="spacer-s"></div>
+                <div class="text-center">
+                  <a href="#" class="button-link" style="text-align: center;">Read More</a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="article">
+                  <img src="img/fav.png" class="center article-img" width="80%">
+                  <p>Wanjie wins an award for their XYZ label machine printing capabilities</p>
+                </div>
+                <div class="spacer-s"></div>
+                <div class="text-center">
+                  <a href="#" class="button-link" style="text-align: center;">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h6 class="">Videos</h6>
+            <div class="row">
+              <div class="col">
+                <!-- Video 1 -->
+                <img src="img/fav.png" width="90%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <!-- Video 2 -->
+                <img src="img/fav.png" width="90%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      
+      <div class="fader-gradient">
+      <div class="container">
+        <h3 class="text-center">Need a Quote?</h3>
+        <form style="width: 90%; padding: 20px;" class="center">
+          <div class="form-row">
+            <div class="col">
+              <label for="company">Company Name</label>
+              <input type="text" class="form-control" id="company" placeholder="Enter Company Name" required>
+            </div>
+            <div class="col">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+            </div>
+          </div>
+          <br>
+          <div class="form-row">
+            <div class="col">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="fName" placeholder="Enter First Name" required>
+            </div>
+            <div class="col">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lName" placeholder="Enter Last Name" required>
+            </div>
+          </div>
+          <br>
+          <div class="form-row">
+            <div class="col">
+              <label for="message">Message</label>
+              <textarea type="textarea" rows="4" class="form-control" id="message" placeholder="Enter your message" required></textarea>
+            </div>
+          </div>
+          <div class="text-center spacer-s">
+            <button type="submit" class="btn btn-custom">Send Inquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- <div class="container" >
       <h2>Company Introduction</h2>
       <p>Hebei Wanjie Machinery Technology Co., Ltd. founded in 1999, is located in northern China printing machinery production
         base – Yutian, Hebei. It is one of the earliest enterprises specializing in developing label printing machines. 
@@ -158,7 +277,7 @@
         Our products are sold nationwide, as well as more than 30 countries and regions. Such as German, England, Italy, Spain,
         Portugal, America, Vietnam, Thailand, Russia, Iran, Malaysia, Indonesia, Turkey, Brazil, South Korea, Serbia, Australia, Netherlands,
         UAE, India, Ukraine, and Taiwan.</p>
-    </div>
+    </div> -->
 
     <!-- <h1>Wanjie Machinery Technology Co., Ltd.</h1> -->
 
@@ -172,7 +291,8 @@
         </div>
         <div class="col">
           <h6>Wanjie Machinery</h6>
-          <p></p>
+          <p>Hebei Wanjie Machinery Technology Co., Ltd. founded in 1999, is located in northern China printing machinery production
+            base – Yutian, Hebei. It is one of the earliest enterprises specializing in developing label printing machines. </p>
         </div>
         <div class="col">
           <h6 class="text-center">Contact Info</h6>

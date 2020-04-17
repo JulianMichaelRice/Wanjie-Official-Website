@@ -49,7 +49,7 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px;
+    padding: 10px;
 }
 
 .hider::-webkit-scrollbar {
@@ -69,5 +69,53 @@ html {
 .jumbotron {
     font-weight: 300;
     color: white;
-    background: linear-gradient(90deg,#2E2F82, #10934B)
+    background: linear-gradient(90deg,#2E2F82, #10934B);
+}
+.button-link {
+    background: linear-gradient(180deg,rgb(19, 20, 83), rgb(6, 92, 45));
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.button-link:hover {
+    background: #DDDDDD;
+    text-decoration: none;
+    color: #10934B;
+}
+.article {
+    background: linear-gradient(180deg,#2E2F82, #10934B);
+    padding: 7.5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.article p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.article-img {
+    border-radius: 10px;
+}
+form {
+    font-weight: 500;
+}
+.form-control {
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    font-size: 20px;
+    border: 1.5px solid #2E2F82;
+}
+.btn-custom {
+    background: white;
+    color: #10934B;
+    border: 0px;
+}
+.btn-custom:hover {
+    background: #2E2F82;
+    color: white;
+    border: 0px;
+}
+.fader-gradient {
+    background: linear-gradient(180deg, #FFFFFF, #10934B);
 }
