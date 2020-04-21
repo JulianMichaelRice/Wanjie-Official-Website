@@ -13,7 +13,9 @@ p {
     display: block;
     text-align: center;
 }
-
+.padder {
+    padding: 15px;
+}
 .navbar-nav > li {
     display: inline-block;
     float:none;
